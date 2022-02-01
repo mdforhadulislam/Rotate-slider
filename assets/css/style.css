@@ -1,0 +1,650 @@
+/* Base CSS */
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+a:focus {
+  outline: 0 solid;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  color: #1b1b21;
+  font-family: "Gilroy";
+}
+
+body {
+  color: #545051;
+  font-weight: 300;
+  font-family: "Gilroy";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"),
+    url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Header bar section start */
+header {
+  width: 400px;
+  height: 100vh;
+  display: inline-block !important;
+}
+
+.display__block h1 {
+  position: absolute;
+  top: 47%;
+  right: 50%;
+}
+
+.menu {
+  width: 650px;
+  height: 811px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*! margin: auto; */
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 7px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.arrow__button {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #4282e5;
+  border-radius: 100%;
+  position: absolute;
+  top: 48.5%;
+  right: -30%;
+  -webkit-box-shadow: 0px 4px 34px rgba(69, 156, 236, 0.06);
+  box-shadow: 0px 4px 34px rgba(69, 156, 236, 0.06);
+  cursor: pointer;
+}
+
+.arrow__button::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #fff;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.arrow__button i {
+  color: #fff;
+}
+
+.button {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 34px rgba(69, 156, 236, 0.06);
+  box-shadow: 0px 4px 34px rgba(69, 156, 236, 0.06);
+  border-radius: 12px;
+  width: 196.12px;
+  height: 58.04px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2e72db;
+  position: absolute;
+  cursor: pointer;
+}
+
+.header-area {
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+}
+
+.round {
+  position: absolute;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#6ea6fc),
+    to(#2e72db)
+  );
+  background: linear-gradient(180deg, #6ea6fc 0%, #2e72db 100%);
+  width: 410.7px;
+  height: 410.7px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.round:before {
+  position: absolute;
+  content: "";
+  border: 3px solid #fff;
+  width: 96%;
+  height: 96%;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center .box1 {
+  top: 1.5%;
+  left: 35%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.center .box2 {
+  top: 7.5%;
+  left: 64%;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.center .box3 {
+  top: 24%;
+  right: -14%;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.center .box4 {
+  top: 47%;
+  right: -20%;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.center .box5 {
+  top: 69%;
+  right: -13%;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.center .box6 {
+  top: 85%;
+  right: 7.5%;
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.center .box7 {
+  top: 90.5%;
+  right: 36%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.center .box8 {
+  top: 85%;
+  left: 6%;
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.center .box9 {
+  top: 69%;
+  left: -13.5%;
+  -webkit-transform: rotate(152deg);
+  transform: rotate(152deg);
+}
+
+.center .box10 {
+  top: 46%;
+  left: -21%;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.center .box11 {
+  top: 24%;
+  left: -14%;
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+.center .box12 {
+  top: 8%;
+  left: 7%;
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/*when click button 1 than add this animation*/
+.click1 {
+  -webkit-animation: rotate1 linear 3.6s forwards;
+  animation: rotate1 linear 3.6s forwards;
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+  }
+}
+
+/*when click button 2 than add this animation*/
+.click2 {
+  -webkit-animation: rotate2 linear 4s forwards;
+  animation: rotate2 linear 4s forwards;
+}
+
+@-webkit-keyframes rotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-300deg);
+    transform: rotate(-300deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-300deg);
+    transform: rotate(-300deg);
+  }
+}
+
+/*when click button 3 than add this animation*/
+.click3 {
+  -webkit-animation: rotate3 linear 4.5s forwards;
+  animation: rotate3 linear 4.5s forwards;
+}
+
+@-webkit-keyframes rotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-330deg);
+    transform: rotate(-330deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-330deg);
+    transform: rotate(-330deg);
+  }
+}
+
+/*when click button 4 than add this animation*/
+.click4 {
+  -webkit-animation: rotate4 linear 5s forwards;
+  animation: rotate4 linear 5s forwards;
+}
+
+@-webkit-keyframes rotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+/*when click button 5 than add this animation*/
+.click5 {
+  -webkit-animation: rotate5 linear 0.5s forwards;
+  animation: rotate5 linear 0.5s forwards;
+}
+
+@-webkit-keyframes rotate5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes rotate5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+}
+
+/*when click button 6 than add this animation*/
+.click6 {
+  -webkit-animation: rotate6 linear 1s forwards;
+  animation: rotate6 linear 1s forwards;
+}
+
+@-webkit-keyframes rotate6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes rotate6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+}
+
+/*when click button 7 than add this animation*/
+.click7 {
+  -webkit-animation: rotate7 linear 1.5s forwards;
+  animation: rotate7 linear 1.5s forwards;
+}
+
+@-webkit-keyframes rotate7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+
+/*when click button 8 than add this animation*/
+.click8 {
+  -webkit-animation: rotate8 linear 2s forwards;
+  animation: rotate8 linear 2s forwards;
+}
+
+@-webkit-keyframes rotate8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+  }
+}
+
+@keyframes rotate8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+  }
+}
+
+/*when click button 9 than add this animation*/
+.click9 {
+  -webkit-animation: rotate9 linear 2.5s forwards;
+  animation: rotate9 linear 2.5s forwards;
+}
+
+@-webkit-keyframes rotate9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-150deg);
+    transform: rotate(-150deg);
+  }
+}
+
+@keyframes rotate9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-150deg);
+    transform: rotate(-150deg);
+  }
+}
+
+/*when click button 10 than add this animation*/
+.click10 {
+  -webkit-animation: rotate10 linear 3s forwards;
+  animation: rotate10 linear 3s forwards;
+}
+
+@-webkit-keyframes rotate10 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotate10 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+/*when click button 11 than add this animation*/
+.click11 {
+  -webkit-animation: rotate11 linear 3.5s forwards;
+  animation: rotate11 linear 3.5s forwards;
+}
+
+@-webkit-keyframes rotate11 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-210deg);
+    transform: rotate(-210deg);
+  }
+}
+
+@keyframes rotate11 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-210deg);
+    transform: rotate(-210deg);
+  }
+}
+
+/*when click button 11 than add this animation*/
+.click12 {
+  -webkit-animation: rotate12 linear 4s forwards;
+  animation: rotate12 linear 4s forwards;
+}
+
+@-webkit-keyframes rotate12 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-240deg);
+    transform: rotate(-240deg);
+  }
+}
+
+@keyframes rotate12 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-240deg);
+    transform: rotate(-240deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
